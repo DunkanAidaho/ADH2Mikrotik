@@ -8,16 +8,17 @@
 - учетная запись в Mikrotik с доступом к api на запись.
 - Python3 на сервере с соответствующими модулями (по установке модулей для своего дистрибутива, вопросы необходимо адресовать в тематические форумы)
 
+Параметры:
 
-ROUTER_IP = "..." - IP адрес вашего устройства Mikrotik 
-USERNAME = "..." - учетная запись api mikrotik
-PASSWORD = "..." - пароль от учетной записи
-LOG_FILE_PATH = '' # Ваш путь к логу запросов AdguardHome, в моем случае '/usr/local/AdGuardHome/data/querylog.json'
-INTERFACE = '...' - VPN интерфейс mikrotik, который "смотрит" в VPN
-ROUTE_DISTANCE = "20" - параметр маршрута в mikrotik
-ROUTE_SCOPE = "40" - параметр маршрута в mikrotik
-ROUTE_TARGET_SCOPE = "30" - параметр маршрута в mikrotik
-DOMAINS = [] - домены, IP адреса которых, требуется завернуть в VPN Пример: 
+- ROUTER_IP = "..." - IP адрес вашего устройства Mikrotik 
+- USERNAME = "..." - учетная запись api mikrotik
+- PASSWORD = "..." - пароль от учетной записи
+- LOG_FILE_PATH = '' # Ваш путь к логу запросов AdguardHome, в моем случае '/usr/local/AdGuardHome/data/querylog.json'
+- INTERFACE = '...' - VPN интерфейс mikrotik, который "смотрит" в VPN
+- ROUTE_DISTANCE = "20" - параметр маршрута в mikrotik
+- ROUTE_SCOPE = "40" - параметр маршрута в mikrotik
+- ROUTE_TARGET_SCOPE = "30" - параметр маршрута в mikrotik
+- DOMAINS = [] - домены, IP адреса которых, требуется завернуть в VPN Пример: 
 */ DOMAINS = [
     "youtube.com", "youtube.ru", "ytimg.com", "withyoutube.com", "youtu.be",
     "youtube-nocookie.com", "yt.be", "youtubemobilesupport.com", "youtubekids.com",
@@ -27,9 +28,9 @@ DOMAINS = [] - домены, IP адреса которых, требуется 
 ]  */
 
 # Настройки логирования
-LOG_TO_CONSOLE = False # логирование в консоль
-LOG_TO_FILE = True #логирование в файл
-LOG_FILE_NAME = "/var/log/script.log"  # Путь к файлу лога
+- LOG_TO_CONSOLE = False # логирование в консоль
+- LOG_TO_FILE = True #логирование в файл
+- LOG_FILE_NAME = "/var/log/script.log"  # Путь к файлу лога
 
 
 Плюсы:
